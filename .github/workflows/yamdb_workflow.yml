@@ -43,6 +43,7 @@ jobs:
             file: /api_yamdb/Dockerfile
             push: true
             tags: axelvonreems/yamdb_final
+            context: ./api_yamdb/
 
   deploy:
     runs-on: ubuntu-latest
