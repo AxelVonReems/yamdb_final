@@ -1,6 +1,14 @@
-![Yamdb_workflow](https://github.com/AxelVonReems/yamdb_final/workflows/yamdb_workflow.yaml/badge.svg)
+[![Django-app workflow](https://github.com/AxelVonReems/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?branch=master)](https://github.com/AxelVonReems/yamdb_final/actions/workflows/yamdb_workflow.yml)
 
-## Проект YaMDb
+# Проект YaMDb
+
+API для сервиса YaMDb - сбор отзывов пользователей на книги, фильмы и музыку.
+
+Проект доступен по адресу: 51.250.23.204/admin
+
+Документация доступна по адресу: 51.250.23.204/redoc
+
+## Описание проекта
 
 Проект YaMDb собирает отзывы пользователей на произведения. Произведения делятся на категории: «Книги», «Фильмы», «Музыка». В каждой категории есть произведения: книги, фильмы или музыка. Произведению может быть присвоен жанр. Новые жанры может создавать только администратор. Пользователи могут оставить к произведениям текстовые отзывы и поставить произведению оценку в диапазоне от одного до десяти. Из пользовательских оценок формируется усреднённая оценка произведения — рейтинг. Присутствует возможность комментирования отзывов.
 
@@ -18,6 +26,10 @@ Django 2.2.16
 Django REST Framework 3.12.4
 Django REST Framework simplejwt 5.1.0
 
+## Автор проекта
+
+Алексей Смирнов. GitHub: https://github.com/AxelVonReems/
+
 ## Как запустить проект
 
 Клонировать репозиторий и перейти в него в командной строке:
@@ -32,7 +44,30 @@ https://github.com/AxelVonReems/yamdb_final.git
 cd yamdb_final
 ```
 
-Создать и заполнить по образцу .env-файл:
+Cоздать и активировать виртуальное окружение:
+
+```
+WIN: python -m venv venv
+MAC: python3 -m venv venv
+```
+
+```
+WIN: source venv/scripts/activate
+MAC: source venv/bin/activate
+```
+
+Установить зависимости из файла requirements.txt:
+
+```
+WIN: python -m pip install --upgrade pip
+MAC: python3 -m pip install --upgrade pip
+```
+
+```
+pip install -r requirements.txt
+```
+
+В папке infra создать и заполнить по образцу .env-файл:
 
 ```
 DB_ENGINE=django.db.backends.postgresql - указываем, что работаем с postgresql
