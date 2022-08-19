@@ -105,3 +105,9 @@ docker-compose exec web python manage.py collectstatic --no-input
 ```
 docker-compose exec web python manage.py createsuperuser
 ```
+
+Заполнить базу начальными данными:
+
+```
+docker-compose exec web python manage.py loaddata fixtures.json
+```
