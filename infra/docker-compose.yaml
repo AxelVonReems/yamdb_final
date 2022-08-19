@@ -6,7 +6,6 @@ services:
     environment:
       - POSTGRES_DB=db
       - POSTGRES_HOST_AUTH_METHOD=trust
-      - POSTGRES_PASSWORD=postgres
     volumes:
       - /var/lib/postgresql/data/
     env_file:
