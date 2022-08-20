@@ -15,6 +15,7 @@ class User(AbstractUser):
     REQUIRED_FIELDS = ["email", "password"]
 
     bio = models.TextField(
+        null=True,
         blank=True,
         verbose_name="Биография",
     )
