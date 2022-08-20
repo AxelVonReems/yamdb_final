@@ -26,10 +26,6 @@ Django 2.2.16
 Django REST Framework 3.12.4
 Django REST Framework simplejwt 5.1.0
 
-## Автор проекта
-
-Алексей Смирнов. GitHub: https://github.com/AxelVonReems/
-
 ## Как запустить проект
 
 Клонировать репозиторий и перейти в него в командной строке:
@@ -111,3 +107,7 @@ docker-compose exec web python manage.py createsuperuser
 ```
 docker-compose exec web python manage.py loaddata fixtures.json
 ```
+
+## Автор проекта
+
+Алексей Смирнов. GitHub: https://github.com/AxelVonReems/
